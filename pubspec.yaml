@@ -1,0 +1,43 @@
+name: qk
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Firebase core package for initializing Firebase
+  firebase_core: ^3.9.0
+
+  # Firebase Authentication for email/password, phone, and Google sign-in
+  firebase_auth: ^5.3.4
+
+
+  firebase_database: ^11.3.0
+  # Cloud Firestore for CRUD operations
+  cloud_firestore: ^5.6.0
+
+  # Google Sign-In package
+  google_sign_in: ^6.2.2
+
+  # Cupertino Icons for iOS style icons
+  cupertino_icons: ^1.0.8
+
+
+  fluttertoast: ^8.2.10
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
