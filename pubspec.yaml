@@ -4,6 +4,13 @@ description: "A new Flutter project."
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 
+
+
+
+
+
+
+
 # The following defines the version and build number for your application.
 version: 1.0.0+1
 
@@ -25,11 +32,19 @@ dependencies:
   # Cloud Firestore for CRUD operations
   cloud_firestore: ^5.6.0
 
+  image_picker: ^1.1.2
+  firebase_storage: ^12.4.1
+  random_string: ^2.3.1
+
   # Google Sign-In package
   google_sign_in: ^6.2.2
 
   # Cupertino Icons for iOS style icons
   cupertino_icons: ^1.0.8
+
+
+  # Curved Navigation Bar for bottom navigation
+  curved_navigation_bar: ^1.0.6
 
 
   fluttertoast: ^8.2.10
@@ -41,3 +56,7 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
+
+  assets:
+    - images/
