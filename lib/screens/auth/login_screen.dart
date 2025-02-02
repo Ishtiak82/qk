@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:qk/pages/bottomnav.dart';
 import 'package:qk/screens/fs_screens/fs_homepage.dart';
 import 'package:qk/screens/home/forgot_password.dart';
 
@@ -45,7 +46,7 @@ class _LoginScreenState extends State<LoginScreen> {
       Utils().toastMessage("Welcome back, ${value.user!.email}!");
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => const FireStoreHomePage()),
+        MaterialPageRoute(builder: (context) => const BottomNav()),
       );
       setState(() {
         loading = false;

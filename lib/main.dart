@@ -2,7 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:qk/admin/upload_product.dart';
 import 'package:qk/pages/bottomnav.dart';
+import 'package:qk/pages/cateory_product.dart';
 import 'package:qk/pages/home.dart';
+import 'package:qk/pages/product_details.dart';
+import 'package:qk/pages/saved_products.dart';
 import 'package:qk/screens/signup_screen.dart';
 import 'screens/splash_screen.dart';
 
@@ -22,7 +25,7 @@ class MyApp extends StatelessWidget {
 
         primarySwatch: Colors.deepPurple
       ),
-      home: UploadProduct(),
+      home: SplashScreen(),
     );
   }
 }

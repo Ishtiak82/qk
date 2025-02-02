@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:qk/pages/bottomnav.dart';
 
 
 import '../screens/auth/login_screen.dart';
@@ -21,7 +22,7 @@ class SplashServices {
       Timer(const Duration(seconds: 2), () {
         Navigator.pushReplacement(
           context,
-          MaterialPageRoute(builder: (context) => const FireStoreHomePage()),
+          MaterialPageRoute(builder: (context) => const BottomNav()),
          // MaterialPageRoute(builder: (context) => const HomePage()),
         );
 

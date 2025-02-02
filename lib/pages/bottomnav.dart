@@ -1,8 +1,9 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:qk/pages/profile.dart';
+import 'package:qk/pages/saved_products.dart';
 
-import 'booking.dart';
+
 import 'home.dart';
 class BottomNav extends StatefulWidget {
   const BottomNav({super.key});
@@ -14,7 +15,7 @@ class BottomNav extends StatefulWidget {
 class _BottomNavState extends State<BottomNav> {
   late List<Widget>pages;
   late Home home ;
-  late Booking booking;
+  late SavedProducts savedproducts;
   late Profile profile;
   int currentTabindex =0;
 
@@ -22,9 +23,9 @@ class _BottomNavState extends State<BottomNav> {
   @override
   void initState() {
    home = Home();
-   booking = Booking();
+   savedproducts = SavedProducts();
    profile = Profile();
-   pages= [home,booking,profile];
+   pages= [home,savedproducts,profile];
     super.initState();
   }
   @override

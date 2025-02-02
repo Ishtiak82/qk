@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:qk/pages/bottomnav.dart';
 import 'package:qk/utils/utiils.dart';
 import 'package:qk/widgets/round_button.dart';
 import 'fs_screens/fs_homepage.dart';
@@ -45,7 +46,7 @@ class _VerifyOtpState extends State<VerifyOtp> {
       Utils().toastMessage("Login successful!");
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => const FireStoreHomePage()),
+        MaterialPageRoute(builder: (context) => const BottomNav()),
       );
     } catch (e) {
       Utils().toastMessage(e.toString());
